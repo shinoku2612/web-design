@@ -1,8 +1,13 @@
 :root {
     --gap-x: 16px;
+    --col-width: calc((100vw - 12 * var(--gap-x)) / 12);
     --primary-clr: #21405d;
     --logo-text: #08223d;
     --top-bg: #b5bfc2;
+}
+::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
 }
 @font-face {
     font-family: 'Baskerville';
@@ -16,6 +21,10 @@
     font-family: 'HallowSolid';
     src: url(../fonts/HarlowSolid.ttf);
 }
+@font-face {
+    font-family: 'Kunstler';
+    src: url(../fonts/Kunstler.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -27,13 +36,39 @@ body {
     font-size: 16px;
     background-color: var(--top-bg);
 }
+
+/* LAYOUT */
+.logo__name {
+    font-size: 44pt;
+    text-align: center;
+    font-weight: 300;
+    color: var(--logo-text);
+    font-family: 'Baskerville';
+    font-style: normal;
+}
+.class_name {
+    font-family: 'HallowSolid';
+    text-align: center;
+    font-size: 30pt;
+    color: var(--logo-text);
+}
+.nav-item {
+    font-family: 'Baskerville';
+    font-size: 32pt;
+    font-style: italic;
+    text-align: center;
+    cursor: pointer;
+    border-top: 8px solid var(--primary-clr);
+    text-decoration: none;
+    color: black;
+}
+
 .container {
     width: 100%;
 }
 .row {
     width: 100%;
     display: flex;
-    --col-width: calc((100% - 12 * var(--gap-x)) / 12);
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -88,4 +123,45 @@ body {
 .align-item-center {
     display: flex;
     align-items: center;
+}
+.relative {
+    position: relative;
+}
+.text-center {
+    text-align: center;
+}
+.right-0 {
+    right: 0;
+    left: unset;
+}
+.left-0 {
+    left: 0;
+    right: unset;
+}
+.top-0 {
+    top: 0;
+    bottom: unset;
+}
+.bottom-0 {
+    bottom: 0;
+    top: unset;
+}
+
+.active-route {
+    font-weight: bold;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+.justify-spacing-around {
+    display: flex;
+    justify-content: space-around;
+}
+.width-50 {
+    width: 50%;
+}
+.text-right {
+    text-align: right;
 }

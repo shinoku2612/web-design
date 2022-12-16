@@ -1,0 +1,88 @@
+.img-collection {
+    height: 800px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.square-img {
+    aspect-ratio: 1;
+    border: 16px solid #eee;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+.img-active::after {
+    content: 'active';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -16px;
+    transform: translateX(100%);
+    writing-mode: vertical-rl;
+    font-family: 'HallowSolid';
+    font-size: 36pt;
+}
+.square-4 {
+    width: calc(var(--col-width) * 4);
+    position: absolute;
+}
+/* SECTION INFORMATION */
+.greeting {
+    font-family: 'Kunstler';
+    font-size: 46pt;
+    font-weight: 200;
+}
+.description {
+    font-family: 'Baskerville';
+    font-size: 18pt;
+    font-style: italic;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+.standard-img {
+    aspect-ratio: 7/4;
+    border: 16px solid #eee;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-romantic:after {
+    content: 'romantic';
+    display: block;
+    position: absolute;
+    bottom: -64px;
+    left: 0;
+    font-family: 'HallowSolid';
+    font-size: 36pt;
+}
+.img-7-4 {
+    width: calc(var(--col-width) * 9);
+    position: absolute;
+    left: calc(var(--col-width) * 2);
+    transform: translateY(25%);
+    z-index: 2;
+}
+
+.img-humorous::after {
+    content: 'humorous';
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: -60px;
+    left: 16px;
+    transform: translateX(35%);
+    font-family: 'HallowSolid';
+    font-size: 36pt;
+}
+
+/* MAXIM */
+.maxim,
+.sign {
+    font-family: 'Baskerville';
+    font-style: italic;
+    font-size: 18pt;
+    text-align: right;
+    line-height: 1.8;
+}

@@ -4,43 +4,81 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>BAI TAP 3</title>
+        <title>BAI TAP 3 - Information</title>
         <link rel="stylesheet" href="./assets/css/layout.css" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/information.css" />
         <script type="module" src="./assets/js/index.js" defer></script>
     </head>
     <body>
         <header class="container" style="margin-top: 53px">
-            <div class="row align-item-center">
-                <div class="col-1"></div>
-                <div class="col-2">
-                    <nav class="nav-item">family</nav>
-                </div>
-                <div class="col-6">
-                    <nav class="logo">
+            <div class="row align-item-center justify-spacing-around">
+                <div class="">
+                    <a href="./index.html" class="nav-item">
                         <h3 class="logo__name">Bao T Van</h3>
-                        <p class="class_name">20dptd1</p>
-                    </nav>
+                        <div class="logo">
+                            <p class="class_name">20dptd1</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-2">
-                    <nav class="nav-item">school</nav>
+                <div class="justify-center">
+                    <a href="./index.html" class="nav-item active-route"
+                        >information</a
+                    >
                 </div>
-                <div class="col-1"></div>
-            </div>
-            <div class="row align-item-center" style="margin-top: 30px">
-                <div class="col-2">
-                    <nav class="nav-item">objective</nav>
+                <div class="justify-center">
+                    <a href="./hobbies.html" class="nav-item">hobbies</a>
                 </div>
-                <div class="col-1"></div>
-                <div class="col-2">
-                    <nav class="nav-item">information</nav>
-                </div>
-                <div class="col-1"></div>
-                <div class="col-2">
-                    <nav class="nav-item">hobbies</nav>
+                <div class="justify-center">
+                    <a href="./objective.html" class="nav-item">objective</a>
                 </div>
             </div>
         </header>
-        <main class="container" style="margin-top: 53px"></main>
+        <main class="container" style="margin-top: 53px">
+            <section class="row information">
+                <div class="col-5"></div>
+                <div class="col-7">
+                    <h3 class="greeting text-center">I'm Van</h3>
+                    <p class="description">I'm 19 years old.</p>
+                    <p class="description">
+                        I'm a student at Ho Chi Minh city University of
+                        Technology.
+                    </p>
+                    <p class="description">
+                        There are 3 words to describe myseft: humorous, romantic
+                        and active.
+                    </p>
+                </div>
+            </section>
+            <div class="img-collection relative">
+                <div
+                    class="square-img square-4 img-active top-0 letf-0"
+                    style="background-image: url(./assets/img/IMG_1583.JPG)"
+                ></div>
+                <div
+                    class="standard-img img-7-4 img-romantic"
+                    style="background-image: url(./assets/img/IMG_0101.JPG)"
+                ></div>
+                <div
+                    class="square-img square-4 img-humorous right-0"
+                    style="
+                        background-image: url(./assets/img/IMG_1582.jpg);
+                        transform: translateY(350px);
+                    "
+                ></div>
+            </div>
+            <section class="maxim-group" style="margin-bottom: 53px">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-6">
+                        <p class="maxim">
+                            “Happiness reside not in possessions, and not in
+                            gold, happiness dwells in the soul”
+                        </p>
+                        <p class="sign">_Democritos_</p>
+                    </div>
+                    <div class="col-5"></div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
